@@ -1,0 +1,33 @@
+{
+  "name": "laboratory",
+  "description": "一些看起来很厉害，暂时又没有使用场景的代码片段",
+  "scripts": {
+    "check": "npm run lint",
+    "lint": "eslint \"miniprogram/**/*.js\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.h5open.com/stephen/laboratory.git"
+  },
+  "author": "zhiiee",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "lint-staged": "^9.5.0",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,wxs}": [
+      "npm run lint",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="title" style="padding-top: {{ statusBarHeight + 44 }}px">
+    <image class="icon" src="{{ icon }}"/>
+    <view class="name">不明觉厉的实验室</view>
+    <view class="desc">一些看起来很厉害，暂时又没有使用场景的代码片段</view>
+  </view>
+  <scroll-view scroll-y="true" style="width: 100%; height: calc({{ windowHeight }}px - {{ titleHeight }}px - 80rpx - {{ windowBottom }}rpx - 32px);">
+    <view class="main">
+      <mp-cells>
+        <mp-cell wx:for="{{ subPackages }}" wx:for-index="index" wx:for-item="package" wx:key="index" link hover value="{{ package['title'] }}" data-title="{{ package['title'] }}" data-root="{{ package['root'] }}" bindtap="onPackageTap"/>
+      </mp-cells>
+    </view>
+  </scroll-view>
+</view>
+<copyright/>

@@ -1,0 +1,7 @@
+<view class="copyright" style="padding-bottom: {{ windowBottom }}rpx">
+  <view>©上海知乙网络科技有限公司</view>
+  <view>
+    <label>Apache License 2.0</label>
+    <label bindtap="onGitHubTap">GitHub</label>
+  </view>
+</view>

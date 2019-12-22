@@ -1,0 +1,50 @@
+page {
+  color: #323233;
+  font-size: 16px;
+  background: #F7F8FA;
+  font-family: 'PingFang SC', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+
+.title {
+  padding-left: 30rpx;
+  padding-bottom: 60rpx;
+}
+
+.icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 30rpx;
+}
+
+.icon, .name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.desc {
+  font-size: 14px;
+  color: #7D7E80;
+  padding-right: 30rpx;
+  margin-top: 20rpx;
+  word-wrap: break-word;
+}
+
+.weui-cells::before {
+  border-top: none;
+}
+
+.weui-cells::after {
+  border-bottom: none;
+}
